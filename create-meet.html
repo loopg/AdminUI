@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Meet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Admin.html">Dashboard</a></li>
+                <li><a href="create-event.html">Create Event</a></li>
+                <li><a href="create-meet.html">Create Meet</a></li>
+                <li><a href="publish-results.html">Publish Results</a></li>
+                <li><a href="shortlist-candidates.html" class="active">Shortlist Candidates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Create Meet Section -->
+    <section style="padding: 30px; max-width: 800px; margin: auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #333;">Create New Meet</h2>
+        <form>
+            <label for="meet-name">Meet Name:</label>
+            <input type="text" id="meet-name" name="meet-name" placeholder="Enter meet name" required><br><br>
+
+            <label for="meet-date">Meet Date:</label>
+            <input type="date" id="meet-date" name="meet-date" required><br><br>
+
+            <label for="description">Meet Description:</label>
+            <textarea id="description" name="description" rows="5" placeholder="Describe the meet"></textarea><br><br>
+
+            <button type="submit">Create Meet</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 10px;">
+        <p>&copy; 2024 Athletics Admin Dashboard</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section.profile-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .event-card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .event-card {
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            width: 320px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .event-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .event-card h3 {
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        .event-card p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .event-card .event-date {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Admin.html">Dashboard</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="athletes.html">Athletes</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+                    </ul>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <h2>Results</h2>
+        <p>View the latest competition results and standings.</p>
+    </section>
+
+    <section class="event-card-container">
+        <!-- Event Card 1 -->
+        <div class="event-card">
+            <h3>Event A</h3>
+            <p><strong>Winner:</strong> John Doe</p>
+            <p class="event-date"><strong>Date:</strong> 12th December 2024</p>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="event-card">
+            <h3>Event B</h3>
+            <p><strong>Winner:</strong> Jane Smith</p>
+            <p class="event-date"><strong>Date:</strong> 14th December 2024</p>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="event-card">
+            <h3>Event C</h3>
+            <p><strong>Winner:</strong> Alice Brown</p>
+            <p class="event-date"><strong>Date:</strong> 16th December 2024</p>
+        </div>
+    </section>
+
+</body>
+</html>
